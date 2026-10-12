@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  UPnP/DLNA is plain HTTP: device descriptions (http://192.168.x.x:49152/description.xml)
+  and AVTransport SOAP calls are never TLS. Cleartext has to be permitted for arbitrary
+  LAN addresses, which is why this uses a base-config rather than a domain allow-list.
+  Traffic to the public internet is not affected by this file.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>
+</network-security-config>

@@ -1,3 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">LocalBeam</string>
+
+    <!-- Streaming foreground service -->
+    <string name="channel_streaming_name">Casting</string>
+    <string name="channel_streaming_description">Keeps the local video server alive while a TV is playing.</string>
+    <string name="notification_preparing">Starting local server…</string>
+    <string name="notification_ready">Ready to stream</string>
+    <string name="notification_streaming_to">Streaming to %1$s</string>
+    <string name="notification_action_stop">Stop</string>
 </resources>
