@@ -23,7 +23,11 @@ android {
         release {
             optimization {
                 enable = true
-                packageScope = setOf("androidx.**", "kotlin.**", "kotlinx.**")
+                // packageScope is deliberately left at its default ("**") so R8 runs a
+                // full shrink. Narrowing it switches R8 into *partial* shrinking: only the
+                // listed packages are optimized while everything else (okhttp3, okio, this
+                // app) is left alone, and the optimized half then breaks the access of the
+                // untouched half at runtime -> IllegalAccessError on the first frame.
             }
         }
     }
