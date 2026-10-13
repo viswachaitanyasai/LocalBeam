@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.localbeam"
+    namespace = "com.viswa.localbeam"
     compileSdk {
         version = release(37)
     }
 
     defaultConfig {
-        applicationId = "com.example.localbeam"
+        applicationId = "com.viswa.localbeam"
         minSdk = 26
         targetSdk = 37
         versionCode = 1

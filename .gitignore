@@ -1,11 +1,28 @@
-*.iml
-.gradle
-/local.properties
-/.idea/
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
+# Gradle
+.gradle/
 .kotlin/
+build/
+/local.properties
+
+# Android
+/captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Release artifacts (copied APKs, R8 mapping files)
+/app/release/
+mapping.txt
+
+# Signing material - never commit these
+*.jks
+*.keystore
+keystore.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
