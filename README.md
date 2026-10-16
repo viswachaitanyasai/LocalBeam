@@ -22,7 +22,9 @@ with standard UPnP commands. Nothing leaves the LAN.
 <br>
 
 <!-- Main Download Call to Action -->
-[📥 **Download Latest APK**](https://github.com/viswachaitanyasai/LocalBeam/releases/latest)
+<a href="https://github.com/viswachaitanyasai/LocalBeam/releases/latest">
+  <img src="https://img.shields.io/badge/Download_APK-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Download LocalBeam APK">
+</a>
 
 </div>
 
